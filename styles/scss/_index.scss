@@ -1,0 +1,95 @@
+.index-main {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "presentation presentation-img"
+        "presentation-introduction presentation-me"
+        "find-me find-me";
+
+    min-height: 100vh;
+
+    .presentation {
+        grid-area: presentation;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        padding: 1rem 1rem 1rem 12rem;
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .presentation-img {
+        grid-area: presentation-img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 12rem 1rem 1rem;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 350px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .presentation-introduction {
+        grid-area: presentation-introduction;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .presentation-me {
+        grid-area: presentation-me;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .find-me {
+        grid-area: find-me;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.wave-hand {
+    display: inline-block;
+    font-size: 3rem;
+    animation: wave 1.5s infinite;
+    transform-origin: 70% 70%;
+}
+
+.wave-hand-svg {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+    transform-origin: 70% 70%;
+    vertical-align:top;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
