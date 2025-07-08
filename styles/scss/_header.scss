@@ -1,12 +1,13 @@
 header {
 	display: flex;
 	justify-content: space-between;
+	background-color: transparent;
 	align-items: center;
 	padding: 0.8rem;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
-	transition: background 0.1s, backdrop-filter 0.1s;
+	transition: background 0.5s, backdrop-filter 0.1s;
 }
 
 .logo-container {
@@ -44,6 +45,7 @@ header {
 		color: #ffffff;
 		text-decoration: none;
 		font-weight: 500;
+		font-size: 1.2rem;
 		transition: color 0.3s;
 
 		&::after {

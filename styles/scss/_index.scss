@@ -1,11 +1,14 @@
 .index-main {
     margin-top: 5rem;
     display: grid;
+    position: relative;
+    overflow: hidden;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
         "presentation presentation-img"
         "presentation-introduction presentation-me"
+        "tech-tools tech-tools"
         "find-me find-me";
 
     min-height: 100vh;
@@ -18,14 +21,39 @@
         align-items: center;
         text-align: center;
         height: 100%;
-        padding: 1rem 1rem 1rem 12rem;
+        padding: 1rem 1rem 1rem 10rem;
+        position: relative; 
         h2 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
+            font-weight: 800;
         }
         h3 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+        }
+        .strong-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #9EC5AB;
+        }
+        .typewriter-container {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 5rem;
+            font-family: 'Roboto Mono', monospace;
+            #typewriter {
+                font-size: 2rem; 
+                font-weight: 800;
+            }
+            .typewriter-cursor {
+                display: inline-block;
+                width: 1ch;
+                color: white;
+                font-weight: bold;
+                font-size: 2rem;
+                margin-left: -0.08em;
+            }
         }
     }
     .presentation-img {
@@ -34,9 +62,8 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 1rem 12rem 1rem 1rem;
+        padding: 1rem 20rem 1rem 1rem;
         height: 100%;
-
         img {
             max-width: 100%;
             height: auto;
@@ -48,10 +75,35 @@
     .presentation-introduction {
         grid-area: presentation-introduction;
         display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: start;
         height: 100%;
+        padding: 8rem 1rem 1rem 10rem;
+        h4 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+        p {
+            font-size: 1.3rem;
+        }
+        .highlighted {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #9EC5AB;
+        }
+        .link-highlight {
+            font-size: 1.3rem;
+            text-decoration: underline;
+            color: inherit;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            &:hover {
+                color: #9EC5AB;
+            }
+        }
     }
     .presentation-me {
         grid-area: presentation-me;
@@ -60,13 +112,104 @@
         align-items: center;
         text-align: center;
         height: 100%;
+        padding: 5rem 15rem 1rem 1rem;
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 450px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tech-tools {
+        grid-area: tech-tools;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 2rem;
+        text-align: center;
+        h5 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 3rem 0;
+        }
+        .tools-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5rem;
+            .tool-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 8rem; 
+                height: 8rem; 
+                padding: 1.5rem; 
+                background-color: transparent;
+                border: 3px solid #9EC5AB;
+                border-radius: 0.75rem;
+                box-shadow: 0 20px 0px rgba(255, 255, 255, 0.200);
+                transition: transform 0.2s ease;
+                img {
+                    width: 100%;    
+                    height: 100%;
+                    object-fit: contain;
+                    transition: filter 0.8s ease;
+                }
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
     }
     .find-me {
         grid-area: find-me;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2rem 2rem;
+        background: rgba(158, 197, 171, 0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
         text-align: center;
+        .find-me-content {
+            max-width: 800px;
+            h6 {
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: #9EC5AB;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1.2rem;
+                font-weight: 400;
+                margin-bottom: 2rem;
+                color: #eee;
+            }
+            .contact-icons {
+                display: flex;
+                justify-content: center;
+                gap: 4rem;
+                flex-wrap: wrap;
+                .contact-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                    color: #9EC5AB;
+                    border: 2px solid #9EC5AB;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #9EC5AB;
+                        color: #121212;
+                    }
+                }   
+            }
+        }
     }
 }
 .wave-hand {
@@ -93,3 +236,28 @@
     60% { transform: rotate(0deg); }
     100% { transform: rotate(0deg); }
 }
+.bg-blob {
+    position: absolute;
+    z-index: 0;
+    filter: blur(50px);
+    opacity: 0.2;
+    pointer-events: none;
+}
+@keyframes border-shine {
+	0% {
+		background-size: 0% 3px, 0% 3px, 3px 0%, 3px 0%;
+	}
+	25% {
+		background-size: 50% 3px, 50% 3px, 3px 0%, 3px 0%;
+	}
+	50% {
+		background-size: 100% 3px, 100% 3px, 3px 0%, 3px 0%;
+	}
+	75% {
+		background-size: 100% 3px, 100% 3px, 3px 50%, 3px 50%;
+	}
+	100% {
+		background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
+	}
+}
+

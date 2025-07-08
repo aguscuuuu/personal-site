@@ -1,6 +1,6 @@
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 TITLE
-cueCode Software Landing Page
+cueCode Software lading page
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 DESCRIPTION
 
@@ -19,9 +19,9 @@ Download    |
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 USED TECHNOLOGIES
 Languages   | HTML | CSS | SCSS | JavaScript              
-Frameworks  | Bootstrap                                      
+Frameworks  |                                       
 Databases   |                                                    
-Tools       | AOS                                                                                                       
+Tools       | Blobmaker | Font Awesome                                                                                                        
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 DEVELOPERS & CONTRIBUTORS
 - Agustin Cuenca [AgustinCuenca] [aguabentura08@gmail.com] | Main Developer
@@ -35,7 +35,7 @@ To the extent possible under law, the author has waived all copyright and relate
 neighboring rights to this work.
 
 You can copy, modify, distribute and perform the work, even for commercial purposes, all 
-ithout asking permission.
+without asking permission.
 
 2025
 cueCode_ Software.

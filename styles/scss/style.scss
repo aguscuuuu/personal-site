@@ -1,8 +1,11 @@
 @import 'variables';
+@import "breakpoints";
+
 @import 'body';
 @import 'header';
 @import 'footer';
 @import 'index';
+@import "scroll";
 
 * {
 	margin: 0;
