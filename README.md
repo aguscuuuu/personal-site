@@ -23,14 +23,14 @@ The site is designed as a digital cover letter to present my profile in a clear,
 ## Access
 
 - **Repository:** [https://github.com/aguscuuuu/personal-site](https://github.com/aguscuuuu/personal-site)  
-- **Deployment:** 
+- **Deployment:** [https://aguscuuuu.github.io/personal-site/](https://aguscuuuu.github.io/personal-site/)
 
 ## Used Technologies
 
 - **Languages:** HTML, CSS, JavaScript, SCSS  
 - **Frameworks:**   
 - **Databases:** 
-- **Tools:** AOS
+- **Tools:** AOS, Blobmaker, Font Awesome
 
 ## Developers & Contributors
 
