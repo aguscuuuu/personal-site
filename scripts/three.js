@@ -15,7 +15,7 @@ particlesJS("particles-js", {
 			"polygon": { "nb_sides": 3 }
 		},
 		"opacity": {
-			"value": 0.4,
+			"value": 0.7,
 			"random": false
 		},
 		"size": {

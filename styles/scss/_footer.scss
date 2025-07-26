@@ -21,6 +21,7 @@ footer {
 
 		p {
 			height: 100%;
+			font-size: 0.8rem;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -59,10 +60,11 @@ footer {
 				font-size: 1.7rem;
 				transition: color 0.2s;
 			}
-
-			&.github a:hover,
+			&.whatsapp a:hover,
+			&.instagram a:hover,
+			&.mail a:hover,
 			&.linkedin a:hover,
-			&.instagram a:hover {
+			&.github a:hover {
 				color: #9ec5ab;
 			}
 		}

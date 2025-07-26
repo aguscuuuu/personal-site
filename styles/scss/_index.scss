@@ -146,7 +146,7 @@
                 height: 8rem; 
                 padding: 1.5rem; 
                 background-color: transparent;
-                border: 3px solid #9EC5AB;
+                border: 2px solid #9EC5AB;
                 border-radius: 0.75rem;
                 box-shadow: 0 20px 0px rgba(255, 255, 255, 0.200);
                 transition: transform 0.2s ease;
@@ -177,12 +177,13 @@
                 font-size: 2.5rem;
                 font-weight: 800;
                 color: #9EC5AB;
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
+                margin-top: 3rem;
             }
             p {
                 font-size: 1.2rem;
                 font-weight: 400;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
                 color: #eee;
             }
             .contact-icons {
@@ -202,10 +203,12 @@
                     height: 100px;
                     transition: all 0.3s ease;
                     text-decoration: none;
-
                     &:hover {
                         background-color: #9EC5AB;
                         color: #121212;
+                    }
+                    i {
+                        font-size: 2.5rem;
                     }
                 }   
             }
@@ -239,8 +242,8 @@
 .bg-blob {
     position: absolute;
     z-index: 0;
-    filter: blur(50px);
-    opacity: 0.2;
+    filter: blur(90px);
+    opacity: 0.15;
     pointer-events: none;
 }
 @keyframes border-shine {

@@ -9,6 +9,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    ::selection {
+        background-color: #5f836b;
+        color: white;
+    }
 }
 
 main {

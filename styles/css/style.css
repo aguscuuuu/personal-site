@@ -10,6 +10,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+body ::selection {
+  background-color: #5f836b;
+  color: white;
+}
 
 main {
   flex: 1 0 auto;
@@ -231,6 +235,7 @@ footer .copyright p,
 footer .name p,
 footer .socials p {
   height: 100%;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,7 +268,7 @@ footer .socials li a {
   font-size: 1.7rem;
   transition: color 0.2s;
 }
-footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .socials li.instagram a:hover {
+footer .socials li.whatsapp a:hover, footer .socials li.instagram a:hover, footer .socials li.mail a:hover, footer .socials li.linkedin a:hover, footer .socials li.github a:hover {
   color: #9ec5ab;
 }
 
@@ -412,7 +417,7 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
   height: 8rem;
   padding: 1.5rem;
   background-color: transparent;
-  border: 3px solid #9EC5AB;
+  border: 2px solid #9EC5AB;
   border-radius: 0.75rem;
   box-shadow: 0 20px 0px rgba(255, 255, 255, 0.2);
   transition: transform 0.2s ease;
@@ -443,12 +448,13 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
   font-size: 2.5rem;
   font-weight: 800;
   color: #9EC5AB;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 .index-main .find-me .find-me-content p {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: #eee;
 }
 .index-main .find-me .find-me-content .contact-icons {
@@ -473,6 +479,9 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
 .index-main .find-me .find-me-content .contact-icons .contact-item:hover {
   background-color: #9EC5AB;
   color: #121212;
+}
+.index-main .find-me .find-me-content .contact-icons .contact-item i {
+  font-size: 2.5rem;
 }
 
 .wave-hand {
@@ -518,8 +527,8 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
 .bg-blob {
   position: absolute;
   z-index: 0;
-  filter: blur(50px);
-  opacity: 0.2;
+  filter: blur(90px);
+  opacity: 0.15;
   pointer-events: none;
 }
 
@@ -540,6 +549,37 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
     background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
   }
 }
+.cv-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+.cv-section .cv-wrapper img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+
+.download-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #9EC5AB;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.download-btn:hover {
+  background-color: #85a790;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -566,6 +606,11 @@ footer .socials li.github a:hover, footer .socials li.linkedin a:hover, footer .
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #ffffff;
+  --bs-tooltip-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
